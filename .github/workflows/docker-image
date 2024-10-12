@@ -21,8 +21,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    # Set up BuildKit Docker container builder to be able to build
-    # multi-platform images and export cache
+    # Set up BuildKit Docker container builder to be able to build multi-platform images and export cache
     # https://github.com/docker/setup-buildx-action
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v3
